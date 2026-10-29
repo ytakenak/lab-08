@@ -51,6 +51,9 @@ class WizardTest {
     fun enough_mana_for_train() {
         evilWizard.mana = 10 // 10 >= 5 so there are enough mana
         evilWizard.spellPower = 0
+
+        evilWizard.train()
+
         assertEquals(1, evilWizard.spellPower)
         assertEquals(5, evilWizard.mana)
     }
